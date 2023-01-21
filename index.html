@@ -5,12 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/jacket-1.png" type="image/x-icon">
 </head>
 <body>
     <header class="bg-amber-50">
         <!-- Nav  -->
+        <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between py-5">
+            <div class="flex justify-between items-center">
+                <span>
+                    <img class="h-10 inline cursor-pointer" src="images/logo.png" alt="">
+                </span>
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex md:items-center font-bold z-[-1] md:z-auto md:static absulate bg-white w-full left:0 md:w-auto md:py-0 py-4 md:pl-0 pl-7">
+                <li class="mx-5 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a></li>
+                <li class="mx-5 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">About</a></li>
+                <li class="mx-5 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">Service</a></li>
+                <li class="mx-5 md:my-0"><a href="#" class="text-xl hover:text-cyan-500 duration-500">Contact</a></li>
+                <button class="bg-cyan-500 text-white font-bold duration-500 px-6 py-2 mx-4 hover:bg-cyan-600 rounded">Get Started</button>
+            </ul>
+        </nav>
         <!-- banner -->
         <div class="container mx-auto py-12 md:flex justify-center items-center mt-12">
             <div class="space-y-6 px-4">
@@ -178,7 +198,22 @@
         </section>
     </main>
     <footer>
-
+        <div class="py-10 bg-black items-center text-white my-30">
+            <div class="grid md:grid-cols-2 max-w-7xl mx-auto">
+                <div class="px-10">
+                    <h1 class="text-3xl font-semibold">Our Service</h1>
+                <div class="py-3 gap-5 text-1xl font-semibold grid ms:grid-cols-1 items-center">
+                    <p>Life Insurance</p>
+                    <p>Life Insurance</p>
+                    <p>Life Insurance</p>
+                    <p>Life Insurance</p>
+                </div>
+                </div>
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
